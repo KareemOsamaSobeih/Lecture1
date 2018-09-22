@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<style>
+			h1 {
+				color:red;
+				text-align:center;
+			}
+			#top{font-size:20px;} #middle {font-size:28px;} #bottom {font-size:34px;}
+			.name, #top, #middle, #bottom {font-weight: bold;  padding: 10px;}
+			div {
+				background:url(https://images.performgroup.com/di/library/GOAL/76/2b/eden-hazard-chelsea-2017-18_6mbo4i0qa5ql1wxglqeq0jqry.jpg?t=1925606211&quality=90&w=1280);
+				
+				background-size:100% 100%;
+				padding:20px;
+				font-family:Algerian;
+				font-size:60px;
+				font-weight: bold;
+				border:15px solid blue;
+			}
+			input{
+				font-size:20px;
+				font-weight: bold;
+			}
+			button{
+				text-align:center;    color:red; font-size:20px;
+				font-weight: bold;
+			}
+			table {
+				background-color:yellow;
+				border:4px solid black;
+				border-collapse: collapse;
+				width:50%;
+			}
+			th{ border:2px solid black;
+				font-family:Algerian;
+				color:red;
+				font-size:30px;
+				font-weight: bold;
+				text-align:center;
+				padding:5px;
+			}
+			td{ border:2px solid black;
+				font-family:italic;
+				color:black;
+				font-size:25px;
+				font-weight: bold;
+				text-align:center;
+				padding:5px;
+			}
+		</style>
 		<title>
 			My Webpage!
 		</title>
-		<style>
-		h1 {
-			color:red;
-			text-align:center;
-		}
-		</style>
 	</head>
 	<body>
 		<h1> Welcome to my Webpage </h1>
@@ -21,69 +63,72 @@
 		</ul>
 		<h2>Ordered List:</h2>
 		<ol>
-			<li><h2> One </h2></li>
-			<li><h2> Two </h2></li>
-			<li><h2> Three </h2></li>
+			<li id = "top"> One </li>
+			<li id = "middle" class = "name"> Two </li>
+			<li id = "bottom"> Three </li>
 		</ol>
 		<h1> </h1>
-		<h2 style = "color:gray;text-align:left;"> Premier League Topscorers </h2>
+		<h2 style = "color:blue;text-align:left;"> Premier League Topscorers:- </h2>
 		<table>
 			<tr>
-				<th><h3 style = "color:black;text-align:center;"> Position </h3></th>
-				<th><h3 style = "color:black;text-align:center;"> Player's name </h3></th>
-				<th><h3 style = "color:black;text-align:center;"> Goals </h3></th>
-				<th><h3 style = "color:black;text-align:center;"> Assists </h3></th>
+				<th> Position </th>
+				<th> Player's name </th>
+				<th> Goals </th>
+				<th> Assists </th>
 			</tr>
 			<tr>
-				<td><h3 style = "color:black;text-align:center;"> 1 </h3></td>
-				<td><h3 style = "color:blue;text-align:center;"> Eden Hazard </h3></td> 
-				<td><h3 style = "color:green;text-align:center;"> 5 </h3></td>
-				<td><h3 style = "color:red;text-align:center;"> 2 </h3></td>
+				<td> 1 </td>
+				<td> Eden Hazard </td> 
+				<td> 5 </td>
+				<td> 2 </td>
 			</tr>
 			<tr>
-				<td><h3 style = "color:black;text-align:center;"> 2 </h3></td>
-				<td><h3 style = "color:blue;text-align:center;"> Romelu Lukaku </h3></td>
-				<td><h3 style = "color:green;text-align:center;"> 4 </h3></td>
-				<td><h3 style = "color:red;text-align:center;"> 0 </h3></td>
+				<td> 2 </td>
+				<td> Romelu Lukaku </td>
+				<td> 4 </td>
+				<td> 0 </td>
 			</tr>
 			<tr>
-				<td><h3 style = "color:black;text-align:center;"> 2 </h3></td>
-				<td><h3 style = "color:blue;text-align:center;"> Sadio Mané </h3></td>
-				<td><h3 style = "color:green;text-align:center;"> 4 </h3></td>
-				<td><h3 style = "color:red;text-align:center;"> 0 </h3></td>
+				<td> 2 </td>
+				<td> Sadio Mané </td>
+				<td> 4 </td>
+				<td> 0 </td>
 			</tr>
 			<tr>
-				<td><h3 style = "color:black;text-align:center;"> 2 </h3></td>
-				<td><h3 style = "color:blue;text-align:center;"> Glenn Murray </h3></td>
-				<td><h3 style = "color:green;text-align:center;"> 4 </h3></td>
-				<td><h3 style = "color:red;text-align:center;"> 0 </h3></td>
+				<td> 2 </td>
+				<td> Glenn Murray </td>
+				<td> 4 </td>
+				<td> 0 </td>
 			</tr>
 			<tr>
-				<td><h3 style = "color:black;text-align:center;"> 2 </h3></td>
-				<td><h3 style = "color:blue;text-align:center;"> Aleksandar Mitrovic </h3></td>
-				<td><h3 style = "color:green;text-align:center;"> 4 </h3></td>
-				<td><h3 style = "color:red;text-align:center;"> 0 </h3></td>
+				<td> 2 </td>
+				<td> Aleksandar Mitrovic </td>
+				<td> 4 </td>
+				<td> 0 </td>
 			</tr>
 		</table>
+		<h1>   </h1>
 		<form>
 			<input type = "text" placeholder = "Full Name" name = "name">
 			<h2 style = "color:green;text-align:left;"> who is the player of the month in premier league? </h2>
 			<h2> 1. </h2>
 			<img src ="C:\Users\DELL\Downloads\king Eden.jpg" height = "10%" width = "10%">
-			<button style = "color:red;text-align:center;"> Eden Hazard </button>
+			<button> Eden Hazard </button>
 			<h2> 2. </h2>
 			<img src ="C:\Users\DELL\Downloads\Romelu-Lukaku-855337.jpg" height = "10%" width = "10%">
-			<button style = "color:red;text-align:center;"> Romelu Lukaku </button>
+			<button> Romelu Lukaku </button>
 			<h2> 3. </h2>
 			<img src ="C:\Users\DELL\Downloads\sadio-mane.jpg" height = "10%" width = "10%">
-			<button style = "color:red;text-align:center;"> Sadio Mané </button>
+			<button> Sadio Mané </button>
 			<h2>  </h2>
 			<button style = "color:blue;text-align:center;"> Submit </button>
 		</form>
-		<p> Eden Hazard is the player of the month for his contributions.
+		<h2>  </h2>
+		<div>
+		<p style = "color:red;"> Eden Hazard is the player of the month for his contributions.
 		He scored 5 goals and made 2 assists to his colleagues.
 		Unfortunately he missed the uefa champions league this year for the bad performance last season
 		, but it seems he came back and put chelsea in the right position. </p>
-		
+		<h2 style = "color:red;text-align:center;"> Congratulations Eden!!</h2>
 	</body>
 </html>
