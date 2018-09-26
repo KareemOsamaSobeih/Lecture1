@@ -2,21 +2,61 @@
 <html>
 	<head>
 		<title> My Web Page! </title>
-		<style>
-			a{
-				color : green;    font-size : 18px;
-			}
-			#sec1 { color : red;}   #sec2 { color : green;}   #sec3 { color : blue;}
-		</style>
+		<link rel = "stylesheet" href = "styles.css">
 	</head>
 	<body>
-		<a href = "http://codeforces.com"> Click here ! </a>
+		<a href = "http://codeforces.com"> codeforces </a>
+		<h2> </h2>
+		<a href = "hello.html"> hello </a>
 	</body>
 	<ul>
 		<li><a href = "#sec1"> section 1 </a></li>
 		<li><a href = "#sec2"> section 2 </a></li>
 		<li><a href = "#sec3"> section 3 </a></li>
 	</ul>
+	
+	<form>
+		<div id = "login">
+			<input name = "name" placeholder = "Name" type = "text">
+			<input name = "password" placeholder = "Password" type = "password">
+		</div>
+		<div id = "colors">
+			<h2>Favorite color? </h2>
+			<input name = "color" value = "red" type = "radio"> Red
+			<input name = "color" value = "green" type = "radio"> Green
+			<input name = "color" value = "blue" type = "radio"> Blue
+			<input name = "color" value = "others" type = "radio"> Others
+		</div>
+		<div>
+			<input name = "country" list = "countries" placeholder = "Country">
+			<datalist id = "countries">
+				<option value = "England">
+				<option value = "Hungary">
+				<option value = "Egypt">
+				<option value = "USA" >
+			</datalist>
+		</div>
+	</form>
+	<ol>
+		Ordered list
+		<li> list item one </li>
+		<li> list item two </li>
+		<ul>
+			<li> sublist item one </li>
+			<li> sublist item two </li>
+			<ul>
+				<li> subsublist item one </li>
+				<li> subsublist item two </li>
+			</ul>
+		</ul>
+		<li> list item three </li>
+	</ol>
+	<form>
+		<input name = "name" placeholder = "First Name" type = "text">
+		<input name = "name" placeholder = "Last Name" type = "text">
+		<input name = "name" placeholder = "Age" type = "number">
+	</form>
+	<button>Click</button>
 	<p id = "sec1">
 		It is recommended that you work through Getting started with the web 
 		before proceeding with this topic. However, doing so isn't absolutely necessary 
