@@ -1,0 +1,39 @@
+a{color : blue;    font-size : 18px;}
+h1, h2 {color : red; }
+#sec1 { color : red;}   #sec2 { color : green;}   #sec3 { color : blue;}
+#login { color:blue; font-size : 18px;}
+#colors { color : gray; font-size : 18px;}
+#countries { color : red; font-size : 18px;}
+div { padding:5px;}
+ol {color :green; font-size:25px;}
+ol > li{color :red; font-size: 22px;}
+ol ul li {color : blue; font-size:19px;}
+ol ul ul li {color : yellow; font-size:19px;}
+input[type = text] 
+{
+	background-color : yellow;
+	font-size:20px;
+	color : blue;
+}
+input[type = number] 
+{	
+	font-size:20px;
+	background :red;
+}
+input[type = password] 
+{
+	font-size:20px;
+	background :red;
+}
+input[placeholder = "Country"] 
+{
+	background-color : yellow;
+	font-size:20px;
+	color : red;
+}
+button {
+	width : 200px; height : 50px;  background-color : green; font-size : 24px;}
+}
+button:hover {
+	background-color: yellow; font-size: 30;
+}
