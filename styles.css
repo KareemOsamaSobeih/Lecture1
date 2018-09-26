@@ -8,7 +8,7 @@ div { padding:5px;}
 ol {color :green; font-size:25px;}
 ol > li{color :red; font-size: 22px;}
 ol ul li {color : blue; font-size:19px;}
-ol ul ul li {color : yellow; font-size:19px;}
+ol ul ul li {color : yellow; font-size:19px; background-color: red; width:200px;}
 input[type = text] 
 {
 	background-color : yellow;
@@ -32,5 +32,24 @@ input[placeholder = "Country"]
 	color : red;
 }
 button {
-	width : 200px; height : 50px;  background-color : green; font-size : 24px;}
+	width : 200px; height : 50px;  background-color : green; font-size : 24px; color : blue;
 }
+button:hover {
+	background-color: yellow;
+	font-size: 20;
+	font-weight:bold;
+}
+@media print{
+	#sec1  { display : none;}
+}			
+@media (min-width : 500px){
+	body{ background-color: #70d0e0;}
+	p::before{content: "\21d2 read this   ";}
+}
+@media (max-width : 499px){
+	body{ background-color: #000070;}
+}
+a::before {
+	content: "\21d2 Click here: ";
+}
+p::selection { color: red; background-color: yellow;}
